@@ -12,28 +12,45 @@ Jogo
 
 
 
-Escopo do jogo
-Quantos jogadores participarão?
-2
 
-Qual será a pontuação máxima?
-3
+PSEUDO CÓDIGO
+Crie um objeto jogo da classe Jogo
 
-Nome do jogador 1: aaaa
-Nome do jogador 2: aaaa
+Leia qtd_participantes
+Set a propriedade de quantidade de participantes de jogo para qtd_participantes
 
-rodada 1
-se o status do jogador 1 for igual a 0:
-	jogador 1: pressione "1" para lançar dados 
-	resultado: X
-	
-	se x == n:
-		venceu e o programa para
-	senão: 
-		Deseja continuar? 0 - não; 1 - sim (dependendo da opção, o status é alterado)
+Leia pontuacao_maxima
+Set a propriedade de pontuacao máxima de jogo para pontuacao_maxima
 
-a mesma coisa para o jogador 2
+Crie um array de jogadores
+(o construtor é ativado quando isso é feito?)
 
+De 1 até qtd_participante
+	leia o nome de cada jogador e guarde nos respectivos elementos do array de jogadores
+
+vencer = 0
+count = 0
+
+enquanto vencer for igual a 0, faça:
+	para i de 1 até qtd_participantes faça:
+		se o jogador[i] for igual a 0:
+			lancar os dados do jogador[i] e acumular a sua pontuacao
+
+			se a pontucao nessa rodada for maior que a pontuacao maxima do jogo:
+				altera o status para 2	
+			se a pontucao nessa rodada for igual à pontuacao maxima do jogo:
+				altera o status para 3
+				vencer = 1
+				para esta estrutura de repeticao
+			senão:
+				pergunta se deseja continuar e, dependendo da opção, altera o status para 1 ou mantem em 0
+	ao final de cada rodada, fazer as verificações de parada, como citado abaixo
+
+fazer alguma coisa aqui pra printar quem venceu
+
+
+
+Verificações de parada de jogo:
 o programa para sse todos os jogadores, exceto 1 perderam, ou todos os jogadores não estão mais ativos, ou alguém vence
 
 . primeiro caso: alterar o status do que não perdeu para vencedor
