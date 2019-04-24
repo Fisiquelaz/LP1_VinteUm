@@ -1,0 +1,42 @@
+Jogador
+. nome
+. pontuação (começa zerado. colocar isso no construtor)
+. status (0 - ativo; 1 - inativo; 2 - perdeu; 3 - ganhou)
+
+- acumular pontuação
+- alterar status
+
+Jogo
+. quantidade de jogadores
+. pontuação máxima
+
+
+
+Escopo do jogo
+Quantos jogadores participarão?
+2
+
+Qual será a pontuação máxima?
+3
+
+Nome do jogador 1: aaaa
+Nome do jogador 2: aaaa
+
+rodada 1
+se o status do jogador 1 for igual a 0:
+	jogador 1: pressione "1" para lançar dados 
+	resultado: X
+	
+	se x == n:
+		venceu e o programa para
+	senão: 
+		Deseja continuar? 0 - não; 1 - sim (dependendo da opção, o status é alterado)
+
+a mesma coisa para o jogador 2
+
+o programa para sse todos os jogadores, exceto 1 perderam, ou todos os jogadores não estão mais ativos, ou alguém vence
+
+. primeiro caso: alterar o status do que não perdeu para vencedor
+. segundo caso: conferir qual tem a maior pontuação e alterar o seu status para vencedor
+. terceiro caso: trivial
+
