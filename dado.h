@@ -1,13 +1,13 @@
 #ifndef _DADO_H_
 #define _DADO_H_
-#include <random>
+// #include <random>
 
 class Dado {
 	private:
 		int valor;
-		std::random_device rd;
-		std::default_random_engine gen;
-		std::uniform_int_distribution<> dis;
+		// std::random_device rd;
+		// std::default_random_engine gen;
+		// std::uniform_int_distribution<> dis;
 
 	public:
 		// construtor
