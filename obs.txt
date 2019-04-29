@@ -33,7 +33,7 @@ count = 0
 
 enquanto vencer for igual a 0, faça:
 	para i de 1 até qtd_participantes faça:
-		se o jogador[i] for igual a 0:
+		se o status do jogador[i] for igual a 0:
 			lancar os dados do jogador[i] e acumular a sua pontuacao
 
 			se a pontucao nessa rodada for maior que a pontuacao maxima do jogo:
