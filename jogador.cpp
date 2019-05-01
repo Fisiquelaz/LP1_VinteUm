@@ -10,11 +10,9 @@ Jogador::Jogador(){
 string Jogador::get_nome() {
 	return nome;
 }
-
 void Jogador::set_nome(string novo_nome){
 	nome = novo_nome;
 }
-
 int Jogador::get_pontuacao(){
 	return pontuacao;
 }

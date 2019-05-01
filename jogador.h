@@ -16,7 +16,7 @@ class Jogador {
 		string get_nome();
 		void set_nome(string nome);
 		int get_pontuacao();
-		void acumula_pontuacao(int lancamento); // DÚVIDA de modularização: Devo colocar o resultado dos dados como parâmetro ou não?
+		void acumula_pontuacao(int lancamento); // Incrementa a pontuação do jogador com o lançamento de cada jogada 
 		int get_status();
 		void altera_status(int novo_status);
 };
