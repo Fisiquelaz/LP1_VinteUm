@@ -1,3 +1,11 @@
+/**
+* @file main.cpp
+* @brief Arquivo principal para execução do programa
+* @author Danilo Miranda de Medeiros Galvão, João Mendes Lopes Neto
+* @since 24/04/2019
+* @date 01/05/2019
+*/
+
 #include <iostream>
 #include <string>
 #include <stdlib.h>
